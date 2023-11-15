@@ -1,14 +1,12 @@
-import { useState } from 'react'
 import './App.css'
+import UserOptions from './components/UserOptions.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-  
-    </>
-  )
+    <div>
+      <UserOptions />
+    </div>
+  );
 }
 
-export default App
+export default App;
