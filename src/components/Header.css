@@ -1,0 +1,28 @@
+.headerBackground {
+    width: 100%;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 0 0 20px 20px;
+    background: #AE8BDB;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position:fixed ;
+    margin: none;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center ;
+
+}
+
+.welcomemessage{
+    color: #FFF;
+    text-align: right;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    margin-right: 5%;
+    justify-content: flex-end;
+}  
