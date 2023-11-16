@@ -1,11 +1,13 @@
-import "./App.css";
+import './App.css';
 import Header from './components/Header';
+import Calendar from './components/Calendar.jsx';
 import UserOptions from './components/UserOptions.jsx';
 
 function App() {
   return (
     <div>
-      <Header />
+      <Header />   
+      <Calendar />
       <UserOptions />
     </div>
   );
