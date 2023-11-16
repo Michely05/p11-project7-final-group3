@@ -11,21 +11,21 @@
         "id": 2,
         "name": "Leer antes de dormir",
         "description": "Dedicar 20 minutos a la lectura antes de ir a dormir.",
-        "category": "Crecimiento personal",
+        "category": "CrecimientoPersonal",
         "completed": true
       },
       {
         "id": 3,
         "name": "Meditar por la mañana",
         "description": "Practicar 10 minutos de meditación cada mañana.",
-        "category": "Bienestar mental",
+        "category": "BienestarMental",
         "completed": false
       },
       {
         "id": 4,
-        "name": "Aprender algo nuevo semanalmente",
+        "name": "Aprender algo nuevo",
         "description": "Dedicar tiempo cada semana a aprender una nueva habilidad o tema.",
-        "category": "Desarrollo personal",
+        "category": "DesarrolloPersonal",
         "completed": true
       },
       {
@@ -39,7 +39,7 @@
         "id": 6,
         "name": "Realizar actos de bondad",
         "description": "Realizar al menos un acto de bondad diario hacia los demás.",
-        "category": "Bienestar emocional",
+        "category": "BienestarEmocional",
         "completed": true
       },
       {

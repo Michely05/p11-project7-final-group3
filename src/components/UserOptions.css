@@ -1,0 +1,45 @@
+.overallHabits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habitContainers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+  height: 40px;
+  background-color: #fafafa;
+  border-radius: 1rem;
+  margin: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.habitContainers p {
+  flex-grow: 1;
+  margin-left: 10px;
+  text-align: start;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #7c7c7c;
+}
+
+.categoryColor {
+  width: 10px;
+  height: 90%;
+  background-color: #ae8bdb;
+}
+
+.categoryColor.Salud {
+  background-color: #3498db;
+}
+
+.categoryColor.CrecimientoPersonal {
+  background-color: #2ecc71;
+}
+
+.categoryColor.Productividad {
+  background-color: orange;
+}
