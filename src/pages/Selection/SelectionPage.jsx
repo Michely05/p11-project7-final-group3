@@ -1,7 +1,8 @@
 import Header from "../../components/Header";
 import UserOptions from "../../components/UserOptions";
+import './SelectionPage.css';
 
-export default function Selection(){
+export default function SelectionPage(){
     return (
         <div>
             <Header />
