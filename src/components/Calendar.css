@@ -7,7 +7,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: normal;
-    color: #AE8BDB;
+    color: #7c7c7c;
 }
 
 .calendar-day {
@@ -27,9 +27,6 @@
 }
 
 .calendar-day.selected {
-    background: #AE8BDB;
+    background: #7c7c7c;
     color: #FAFAFA;
 }
-
-
-

@@ -10,10 +10,11 @@ class Calendar extends React.Component {
         this.state = {
             selectedDate: new Date()
         };
+        this.slider = React.createRef();
     }
 
     componentDidMount() {
-        this.slider.slickGoTo(this.state.selectedDate.getDate() - 1);
+        this.slider.current.slickGoTo(this.state.selectedDate.getDate() - 1);
     }
 
     selectDate = (date) => {
@@ -44,9 +45,9 @@ class Calendar extends React.Component {
 
         return (
             <div className="calendar">
-                <Slider ref={slider => (this.slider = slider)} {...settings}>
+                <Slider ref={this.slider} {...settings}>
                     {dates.map((date, index) => (
-                        <div key={index} style={{ margin: '0 10px' }}>
+                        <div key={index}>
                             <div className="day-of-week">{days[date.getDay()]}</div>
                             <div className={`calendar-day ${this.state.selectedDate.getDate() === date.getDate() ? 'selected' : ''}`} onClick={() => this.selectDate(date)}>
                                 {date.getDate()}
