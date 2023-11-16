@@ -1,5 +1,5 @@
 export class HabitsApi {
     provideHabits(){
-        return fetch('http://localhost:5173/habits')
+        return fetch('http://localhost:3000/habits')
     }
 }

@@ -23,7 +23,7 @@
       },
       {
         "id": 4,
-        "name": "Aprender algo nuevo semanalmente",
+        "name": "Aprender algo nuevo",
         "description": "Dedicar tiempo cada semana a aprender una nueva habilidad o tema.",
         "category": "DesarrolloPersonal",
         "completed": true

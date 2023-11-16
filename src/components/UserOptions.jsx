@@ -41,12 +41,12 @@ const UserOptions = () => {
           {habits.map((habit, index) => (
             <div className="habitContainers" key={index}>
                 <div className={`categoryColor ${habit.category.replace(/\s/g, '')}`}></div>
-                <p id="habitName" key={index}>
+                <p id={"habit-"+ index} key={index}>
                     {habit.name}
                 </p>
-                <Checkbox
+                {/* <Checkbox
             checked={checkedHabits.includes(habit.id)}
-            onChange={() => handleCheckboxChange(habit.id)}/>
+            onChange={() => handleCheckboxChange(habit.id)}/> */}
             </div>
           ))}
         </div>
