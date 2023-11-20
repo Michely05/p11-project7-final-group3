@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { HabitsApi } from '../API/HabitsApi';
 import './UserOptions.css';
 import Checkbox from './Checkbox';
+import AddButton from './AddButton';
 
 const UserOptions = () => {
     const [habits, setHabits] = useState([]);
@@ -49,6 +50,7 @@ const UserOptions = () => {
             onChange={() => handleCheckboxChange(habit.id)}/> */}
             </div>
           ))}
+          <AddButton />
         </div>
       );
 };
