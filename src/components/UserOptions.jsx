@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HabitsApi } from '../API/HabitsApi';
 import './UserOptions.css';
-import Checkbox from './Checkbox';
-import AddButton from './AddButton';
-import AddModal from './AddModal';
 
 const UserOptions = () => {
     const [habits, setHabits] = useState([]);
@@ -61,8 +58,8 @@ const UserOptions = () => {
             onChange={() => handleCheckboxChange(habit.id)}/> */}
             </div>
           ))}
-          <AddButton onClick={handleAddClick} />
-          {isModalOpen && <AddModal onAdd={handleAddHabit} />}
+          {/* <AddButton onClick={handleAddClick} />
+          {isModalOpen && <AddModal onAdd={handleAddHabit} />} */}
         </div>
       );
 };

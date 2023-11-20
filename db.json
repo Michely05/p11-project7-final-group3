@@ -1,88 +1,88 @@
 {
-    "habits": [
-      {
-        "id": 1,
-        "name": "Ir al gimnasio",
-        "description": "Realizar una sesión de cardio o musculación",
-        "category": "Deporte",
-        "completed": false
-      },
-      {
-        "id": 2,
-        "name": "Leer un libro",
-        "description": "Dedicar 20 minutos a la lectura antes de ir a dormir.",
-        "category": "CrecimientoPersonal",
-        "completed": true
-      },
-      {
-        "id": 3,
-        "name": "Meditar por la mañana",
-        "description": "Realizar ejercicios de meditación y nombre 3 cosas por las que se está agradecido/a.",
-        "category": "CrecimientoPersonal",
-        "completed": false
-      },
-      {
-        "id": 4,
-        "name": "Hacer la compra",
-        "description": "Preparar una lista de la compra para la semana.",
-        "category": "VidaDiaria",
-        "completed": true
-      },
-      {
-        "id": 5,
-        "name": "Beber un litro de agua",
-        "description": "Acompañar cada comida con 2 vasos de agua.",
-        "category": "Salud",
-        "completed": false
-      },
-      {
-        "id": 6,
-        "name": "Quedar con un amigo",
-        "description": "Llamar a un amigo para quedar por la tarde.",
-        "category": "VidaDiaria",
-        "completed": true
-      },
-      {
-        "id": 7,
-        "name": "Estirar el cuerpo",
-        "description": "Realizar estiramientos por 5 minutos al despertar.",
-        "category": "Deporte",
-        "completed": false
-      },
-      {
-        "id": 7,
-        "name": "Limpiar la casa",
-        "description": "Ordenar y sacar el polvo de todas las estancias.",
-        "category": "VidaDiaria",
-        "completed": false
-      },
-      {
-        "id": 7,
-        "name": "Salir a correr",
-        "description": "Realizar estiramientos y hacer una ruta de 5km.",
-        "category": "Deporte",
-        "completed": false
-      },
-      {
-        "id": 7,
-        "name": "Escribir un diario",
-        "description": "Relatar todo lo ocurrido durante el día.",
-        "category": "CrecimientoPersonal",
-        "completed": false
-      },
-      {
-        "id": 7,
-        "name": "Preparar la comida",
-        "description": "Buscar una receta en internet y plasmarla.",
-        "category": "VidaDiaria",
-        "completed": false
-      },{
-        "id": 7,
-        "name": "Comer más fruta",
-        "description": "Implementar una pieza en el desayuno y la merienda.",
-        "category": "Salud",
-        "completed": false
-      }
-    ]
-  }
-  
+  "habits": [
+    {
+      "id": 1,
+      "name": "Ir al gimnasio",
+      "description": "Realizar una sesión de cardio o musculación",
+      "category": "Deporte",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "name": "Leer un libro",
+      "description": "Dedicar 20 minutos a la lectura antes de ir a dormir.",
+      "category": "CrecimientoPersonal",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "name": "Meditar por la mañana",
+      "description": "Realizar ejercicios de meditación y nombre 3 cosas por las que se está agradecido/a.",
+      "category": "CrecimientoPersonal",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "name": "Hacer la compra",
+      "description": "Preparar una lista de la compra para la semana.",
+      "category": "VidaDiaria",
+      "completed": true
+    },
+    {
+      "id": 5,
+      "name": "Beber un litro de agua",
+      "description": "Acompañar cada comida con 2 vasos de agua.",
+      "category": "Salud",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "name": "Quedar con un amigo",
+      "description": "Llamar a un amigo para quedar por la tarde.",
+      "category": "VidaDiaria",
+      "completed": true
+    },
+    {
+      "id": 7,
+      "name": "Estirar el cuerpo",
+      "description": "Realizar estiramientos por 5 minutos al despertar.",
+      "category": "Deporte",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "name": "Limpiar la casa",
+      "description": "Ordenar y sacar el polvo de todas las estancias.",
+      "category": "VidaDiaria",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "name": "Salir a correr",
+      "description": "Realizar estiramientos y hacer una ruta de 5km.",
+      "category": "Deporte",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "name": "Escribir un diario",
+      "description": "Relatar todo lo ocurrido durante el día.",
+      "category": "CrecimientoPersonal",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "name": "Preparar la comida",
+      "description": "Buscar una receta en internet y plasmarla.",
+      "category": "VidaDiaria",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "name": "Comer más fruta",
+      "description": "Implementar una pieza en el desayuno y la merienda.",
+      "category": "Salud",
+      "completed": false
+    }
+  ]
+}
