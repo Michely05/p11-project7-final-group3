@@ -1,12 +1,14 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { HabitsApi } from '../API/HabitsApi';
 import './UserOptions.css';
 import Checkbox from './Checkbox';
 import AddButton from './AddButton';
+import AddModal from './AddModal';
 
 const UserOptions = () => {
     const [habits, setHabits] = useState([]);
     const [checkedHabits, setCheckedHabits] = useState([]);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleCheckboxChange = (habitId) => {
         const newCheckedHabits = [...checkedHabits];
@@ -18,7 +20,16 @@ const UserOptions = () => {
         }
     
         setCheckedHabits(newCheckedHabits);
-      };
+    };
+
+    const handleAddClick = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleAddHabit = (newHabit) => {
+        setHabits([newHabit, ...habits]);
+        setIsModalOpen(false);
+    };
       
     useEffect(() => {
         const fetchData = async () => {
@@ -50,7 +61,8 @@ const UserOptions = () => {
             onChange={() => handleCheckboxChange(habit.id)}/> */}
             </div>
           ))}
-          <AddButton />
+          <AddButton onClick={handleAddClick} />
+          {isModalOpen && <AddModal onAdd={handleAddHabit} />}
         </div>
       );
 };
