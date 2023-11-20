@@ -33,14 +33,18 @@
   background-color: #ae8bdb;
 }
 
-.categoryColor.Salud {
+.categoryColor.Deporte {
   background-color: #3498db;
 }
 
-.categoryColor.CrecimientoPersonal {
+.categoryColor.Salud {
   background-color: #2ecc71;
 }
 
-.categoryColor.Productividad {
+.categoryColor.CrecimientoPersonal {
+  background-color: yellow;
+}
+
+.categoryColor.VidaDiaria {
   background-color: orange;
 }
