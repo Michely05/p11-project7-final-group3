@@ -143,6 +143,10 @@
     {
       "texto": "pelear con el diablo en el cerro",
       "id": 21
+    },
+    {
+      "name": "comer gominolas",
+      "id": 22
     }
   ]
 }
