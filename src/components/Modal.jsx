@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import "./Modal.css";
+import React, { useState } from 'react';
+import './Modal.css';
+import UserOptions from "./UserOptions";
+
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
