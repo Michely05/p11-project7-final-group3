@@ -50,39 +50,87 @@
         "completed": false
       },
       {
-        "id": 7,
+        "id": 8,
         "name": "Limpiar la casa",
         "description": "Ordenar y sacar el polvo de todas las estancias.",
         "category": "VidaDiaria",
         "completed": false
       },
       {
-        "id": 7,
+        "id": 9,
         "name": "Salir a correr",
         "description": "Realizar estiramientos y hacer una ruta de 5km.",
         "category": "Deporte",
         "completed": false
       },
       {
-        "id": 7,
+        "id": 10,
         "name": "Escribir un diario",
         "description": "Relatar todo lo ocurrido durante el día.",
         "category": "CrecimientoPersonal",
         "completed": false
       },
       {
-        "id": 7,
+        "id": 11,
         "name": "Preparar la comida",
         "description": "Buscar una receta en internet y plasmarla.",
         "category": "VidaDiaria",
         "completed": false
       },{
-        "id": 7,
+        "id": 12,
         "name": "Comer más fruta",
         "description": "Implementar una pieza en el desayuno y la merienda.",
         "category": "Salud",
         "completed": false
-      }
+      },{
+        "id": 13,
+        "name": "Meditar",
+        "description": "Unos minutos de introspeccion y relajacion",
+        "category": "VidaDiaria",
+        "completed": false
+      },{
+        "id": 14,
+        "name": "Nadar",
+        "description": "Ir a nadar.",
+        "category": "Deporte",
+        "completed": false
+      },{
+        "id": 15,
+        "name": "Reunion con amigos",
+        "description": "Implementar una pieza en el desayuno y la merienda.",
+        "category": "VidaDiaria",
+        "completed": false
+      } ,{
+        "id": 16,
+        "name": "Clase de baile",
+        "description": "Clase de baile.",
+        "category": "VidaDiaria",
+        "completed": false
+      },{
+        "id": 17,
+        "name": "Paseo en bicicleta",
+        "description": "salir en mi bicicleta por una ruta.",
+        "category": "VidaDiaria",
+        "completed": false
+      },{
+        "id": 18,
+        "name": "Clase de baile",
+        "description": "Clase de baile.",
+        "category": "VidaDiaria",
+        "completed": false
+      },{
+        "id": 19,
+        "name": "Clase de baile",
+        "description": "Clase de baile.",
+        "category": "VidaDiaria",
+        "completed": false
+      },{
+        "id": 20,
+        "name": "senderismo",
+        "description": "Caminar por una ruta.",
+        "category": "VidaDiaria",
+        "completed": false 
+      } 
     ]
   }
   
