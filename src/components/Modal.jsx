@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Modal.css';
-import UserOptions from "./UserOptions";
-
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
@@ -13,14 +11,13 @@ export default function Modal() {
 
   const handleDoneButtonClick = () => {
     console.log("Texto introducido:", inputValue);
-    
 
     fetch("http://localhost:3000/habits", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name: inputValue, }),
+      body: JSON.stringify({ name: inputValue }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -32,6 +29,8 @@ export default function Modal() {
       .finally(() => {
         setShowModal(false);
         setInputValue("");
+        // Recargar la página para reflejar los cambios en el JSON
+        window.location.reload();
       });
   };
 
