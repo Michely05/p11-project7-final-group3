@@ -19,9 +19,7 @@ const UserOptions = () => {
         setCheckedHabits(newCheckedHabits);
     };
 
-    const handleAddClick = () => {
-        setIsModalOpen(true);
-    };
+    
 
     const handleAddHabit = (newHabit) => {
         setHabits([newHabit, ...habits]);
