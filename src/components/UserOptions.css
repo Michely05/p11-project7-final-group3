@@ -3,6 +3,7 @@
   flex-direction: column;
   transform: translateY(10em);
   align-items: center;
+  z-index: -1;
 }
 
 .habitContainers {
