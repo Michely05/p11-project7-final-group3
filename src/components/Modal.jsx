@@ -20,7 +20,7 @@ export default function Modal() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ texto: inputValue }),
+      body: JSON.stringify({ name: inputValue, }),
     })
       .then((response) => response.json())
       .then((data) => {

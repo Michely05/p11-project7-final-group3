@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HabitsApi } from '../API/HabitsApi';
 import './UserOptions.css';
-import { fetchData } from "./UserOptions";
-
 
 const UserOptions = () => {
     const [habits, setHabits] = useState([]);
@@ -30,10 +28,22 @@ const UserOptions = () => {
         setIsModalOpen(false);
     };
       
-useEffect(() => {
-      fetchData();
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await(new HabitsApi()).provideHabits();
+                if (response.ok) {
+                    const data = await response.json();
+                    setHabits(data);
+                } else {
+                    console.log("Ha ocurrido un error :(")
+                }
+            } catch (error) {
+                console.log ("Ha ocurrido un error :(", error);
+            }
+        };
+        fetchData();
     }, []);
-    
 
     return (
         <div className='overallHabits'>
@@ -55,16 +65,3 @@ useEffect(() => {
 };
 
 export default UserOptions;
-export const fetchData = async () => {
-  try {
-    const response = await new HabitsApi().provideHabits();
-    if (response.ok) {
-      const data = await response.json();
-      setHabits(data);
-    } else {
-      console.log("Ha ocurrido un error :(");
-    }
-  } catch (error) {
-    console.log("Ha ocurrido un error :(", error);
-  }
-};
