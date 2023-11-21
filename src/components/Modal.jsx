@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Modal.css';
+import UserOptions from "./UserOptions";
+
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
@@ -25,7 +27,9 @@ export default function Modal() {
       .then(data => {
         console.log('Respuesta del servidor:', data);
         // Puedes realizar acciones adicionales después de la respuesta del servidor
+        UserOptions.fetchData();
       })
+      
       .catch(error => {
         console.error('Error al realizar la solicitud:', error);
       })
