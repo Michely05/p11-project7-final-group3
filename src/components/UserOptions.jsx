@@ -49,7 +49,7 @@ const UserOptions = () => {
         <div className='overallHabits'>
           {habits.map((habit, index) => (
             <div className="habitContainers" key={index}>
-                <div className={`categoryColor ${habit.category.replace(/\s/g, '')}`}></div>
+                <div className={`categoryColor ${habit.category}`}></div>
                 <p id={"habit-"+ index} key={index}>
                     {habit.name}
                 </p>
