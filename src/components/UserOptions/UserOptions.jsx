@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HabitsApi } from '../API/HabitsApi';
+import { HabitsApi } from '../../API/HabitsApi';
 import './UserOptions.css';
 
 const UserOptions = () => {
