@@ -7,7 +7,7 @@ export default function SelectionPage(){
     return (
 
         <div className="selectionPage">
-            <Header />
+            {/* <Header /> */}
             <Calendar />
             <ProgressBar />
         </div>
