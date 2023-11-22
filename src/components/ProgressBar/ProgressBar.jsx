@@ -1,12 +1,17 @@
-import "./ProgressBar.css";
 import React, { useState } from "react";
+import "./ProgressBar.css";
 
 function ProgressBar() {
   const [progress, setProgress] = useState(0);
+  const [buttonCount, setButtonCount] = useState(0);
 
   const incrementProgress = () => {
-    if (progress < 100) {
-      setProgress((prevProgress) => prevProgress + 10);
+    const maxProgress = 100;
+    const incrementValue = 10;
+
+    if (progress + incrementValue <= maxProgress && buttonCount < 7) {
+      setProgress((prevProgress) => prevProgress + incrementValue);
+      setButtonCount((prevCount) => prevCount + 1);
     }
   };
 
@@ -31,3 +36,4 @@ function ProgressBar() {
 }
 
 export default ProgressBar;
+
