@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "../UserOptions/UserOptions";
 import UserOptions from "../UserOptions/UserOptions";
 
-function ProgressBar() {
+function ProgressBar({ habits }) {
   const [progress, setProgress] = useState(0);
   const [buttonCount, setButtonCount] = useState(0);
 
@@ -29,11 +29,7 @@ function ProgressBar() {
         </div>
       </div>
       <div className="progressBtn">
-        <button onClick={incrementProgress}>tomar agua</button>
-        <button onClick={incrementProgress}>programar</button>
-        <button onClick={incrementProgress}>cagar</button>
-        <button onClick={incrementProgress}>cagar</button>
-        <button onClick={incrementProgress}>cagar</button>
+        {habits.map(habit => <button onClick={incrementProgress}>{habit.name}</button>)}
       </div>
     </div>
   );

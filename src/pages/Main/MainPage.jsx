@@ -3,13 +3,13 @@ import Calendar from '../../components/Calendar/Calendar';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import './MainPage.css';
 
-export default function SelectionPage(){
+export default function MainPage({habits}){
     return (
 
         <div className="selectionPage">
             <Header /> 
             <Calendar />
-            <ProgressBar />
+            <ProgressBar habits={habits}/>
         </div>
 
     )
