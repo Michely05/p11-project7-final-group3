@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="headerBackground">
             <Link to={"/"}>Main</Link>
-            <Link to={"/SelectionPage"}>Selection</Link>
+            <Link to={"/selection"}>Selection</Link>
             <p className="welcomemessage">¡Bienvenid@!</p>
         </div>
     );

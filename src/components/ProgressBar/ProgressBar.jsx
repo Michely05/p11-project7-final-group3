@@ -22,7 +22,7 @@ function ProgressBar({ habits }) {
   }, []);
 
   return (
-    <div className="container">
+    <div className="selectedcontainer">
       <div className="progressContainer">
         <div className="progressBar" style={{ width: `${progress}%` }}>
           {`${progress}%`}
