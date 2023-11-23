@@ -3,32 +3,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 250%;
-  position: absolute;
+  transform: translateY(18em);
+ 
 }
 
 .progressContainer {
   width: 300px;
   height: 16px;
-  background-color: #DBEDD6;
   border-radius: 16px;
-  margin-bottom: 20px;
+  background-color: #dbedd6;
+  position: absolute;
+  transform: translateY(2em);
 }
 
 .progressBar {
-  height: 100%;
   border-radius: 16px;
   background-color: #4caf50;
   text-align: center;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
+  height: 16px ;
 }
 
 .progressBtn {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
+  transform: translateY(22em);
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .progressBtn button {
@@ -39,5 +43,6 @@
   border: none;
   background: #FAFAFA;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 

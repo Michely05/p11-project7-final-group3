@@ -1,8 +1,7 @@
 .calendar {
     width: 100%;
     position: fixed;
-    transform: translateY(14em);
-
+    transform: translateY(10em);
 }
 
 .day-of-week {
