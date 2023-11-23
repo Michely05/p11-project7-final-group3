@@ -3,11 +3,11 @@ import UserOptions from "../../components/UserOptions/UserOptions";
 import Modal from "../../components/Modal/Modal";
 import './SelectionPage.css';
 
-export default function SelectionPage(){
+export default function SelectionPage({habits, onSelectedHabit}){
     return (
         <div className="selectionPage">
             <Header />
-            <UserOptions />
+            <UserOptions habits={habits} onSelectedHabit={onSelectedHabit} />
             <Modal />
         </div>
     )
