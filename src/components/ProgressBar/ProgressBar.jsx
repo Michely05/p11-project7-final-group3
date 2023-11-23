@@ -4,6 +4,7 @@ import "../UserOptions/UserOptions";
 import UserOptions from "../UserOptions/UserOptions";
 
 function ProgressBar({ habits }) {
+  const limitedHabits = habits.slice(0,12)
   const [progress, setProgress] = useState(0);
   const [buttonCount, setButtonCount] = useState(0);
 
@@ -29,8 +30,9 @@ function ProgressBar({ habits }) {
         </div>
       </div>
       <div className="progressBtn">
-        {habits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
+        {limitedHabits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
       </div>
+      {habits.length > 12 && <p>Solo se mostrarán los 12 primeros hábitos.</p>}
     </div>
   );
 }
