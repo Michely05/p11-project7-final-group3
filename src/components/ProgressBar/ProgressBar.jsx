@@ -1,14 +1,25 @@
 import "./ProgressBar.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "../UserOptions/UserOptions";
+import UserOptions from "../UserOptions/UserOptions";
 
-function ProgressBar() {
+function ProgressBar({ habits }) {
   const [progress, setProgress] = useState(0);
+  const [buttonCount, setButtonCount] = useState(0);
 
   const incrementProgress = () => {
     if (progress < 100) {
-      setProgress((prevProgress) => prevProgress + 10);
+      // Incrementa el progreso en función del número total de botones
+      const incrementAmount = 100 / buttonCount;
+      setProgress((prevProgress) => Math.min(prevProgress + incrementAmount, 100));
     }
   };
+
+  useEffect(() => {
+    // Cuenta la cantidad de botones al renderizar el componente
+    const buttons = document.querySelectorAll(".progressBtn button");
+    setButtonCount(buttons.length);
+  }, []);
 
   return (
     <div className="container">
@@ -18,13 +29,7 @@ function ProgressBar() {
         </div>
       </div>
       <div className="progressBtn">
-        <button onClick={incrementProgress}>Añadir Tarea</button>
-        <button onClick={incrementProgress}>Añadir Tarea</button>
-        <button onClick={incrementProgress}>Añadir Tarea</button>
-        <button onClick={incrementProgress}>Añadir Tarea</button>
-        <button onClick={incrementProgress}>Añadir Tarea</button>
-        <button onClick={incrementProgress}>Añadir Tarea</button>
-        <button onClick={incrementProgress}>Añadir Tarea</button>
+        {habits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
       </div>
     </div>
   );
