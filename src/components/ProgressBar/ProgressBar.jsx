@@ -29,7 +29,7 @@ function ProgressBar({ habits }) {
         </div>
       </div>
       <div className="progressBtn">
-        {habits.map(habit => <button onClick={incrementProgress}>{habit.name}</button>)}
+        {habits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
       </div>
     </div>
   );

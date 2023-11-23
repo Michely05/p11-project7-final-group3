@@ -43,8 +43,7 @@ export function Router() {
     return (
         <Routes>
             <Route path="/" element={<MainPage habits={habits.filter(habit => habit.selected)} />} />
-            {/* cambiar la ruta a /selection */}
-            <Route path="/SelectionPage" element={<SelectionPage habits={habits}
+            <Route path="/selection" element={<SelectionPage habits={habits}
                 onSelectedHabit={onSelectedHabit} />} />
         </Routes>
     );
