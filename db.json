@@ -50,8 +50,12 @@
       "completed": false
     },
     {
-      "name": "añadir habito",
+      "name": "",
       "id": 8
+    },
+    {
+      "name": "",
+      "id": 9
     }
   ]
 }
