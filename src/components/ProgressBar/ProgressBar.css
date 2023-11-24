@@ -1,22 +1,18 @@
-.selectedContainer {
+.container {
   display: flex;
   flex-direction: column;
-  transform: translateY(10em);
   align-items: center;
   justify-content: center;
   transform: translateY(18em);
 }
-
 .progressContainer {
   width: 300px;
   height: 16px;
-  background-color: #dbedd6;
   border-radius: 16px;
   background-color: #dbedd6;
   position: absolute;
   transform: translateY(2em);
 }
-
 .progressBar {
   border-radius: 16px;
   background-color: #4caf50;
@@ -26,13 +22,14 @@
   font-weight: 600;
   height: 16px;
 }
-
 .progressBtn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateY(22em);
+  height: 60vh;
+  overflow-y: scroll;
 }
-
 .progressBtn button {
   width: 300px;
   height: 50px;
