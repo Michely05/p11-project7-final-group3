@@ -36,7 +36,7 @@ function ProgressBar({ habits }) {
       </div>
 
       <div className="progressBtn">
-        {limitedHabits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
+        {limitedHabits.map(habit => <button class="mainPageHabits" key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
       </div>
       {habits.length > 12 && <p>Solo se mostrarán los 12 primeros hábitos.</p>}
     </>
