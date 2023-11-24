@@ -2,21 +2,21 @@
   "habits": [
     {
       "id": 1,
-      "name": "Ir al gimnasio",
+      "name": "Nuevo nombre",
       "description": "Realizar una sesión de cardio o musculación",
       "category": "Deporte",
       "completed": false
     },
     {
       "id": 2,
-      "name": "Leer un libro",
+      "name": "Nuevo nombre",
       "description": "Dedicar 20 minutos a la lectura antes de ir a dormir.",
       "category": "CrecimientoPersonal",
       "completed": true
     },
     {
       "id": 3,
-      "name": "Meditar por la mañana",
+      "name": "Nuevo nombre",
       "description": "Realizar ejercicios de meditación y nombre 3 cosas por las que se está agradecido/a.",
       "category": "CrecimientoPersonal",
       "completed": false
@@ -50,44 +50,8 @@
       "completed": false
     },
     {
-      "name": "gdfgdfs",
+      "name": "dsfsdfsd",
       "id": 8
-    },
-    {
-      "name": "gfdfgfd",
-      "id": 9
-    },
-    {
-      "name": "fdgsdgdsf",
-      "id": 10
-    },
-    {
-      "name": "fgdfsgdfsg",
-      "id": 11
-    },
-    {
-      "name": "",
-      "id": 12
-    },
-    {
-      "name": "",
-      "id": 13
-    },
-    {
-      "name": "",
-      "id": 14
-    },
-    {
-      "name": "gsdgfdfg",
-      "id": 15
-    },
-    {
-      "name": "",
-      "id": 16
-    },
-    {
-      "name": "",
-      "id": 17
     }
   ]
 }
