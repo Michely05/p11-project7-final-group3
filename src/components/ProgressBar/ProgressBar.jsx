@@ -23,17 +23,23 @@ function ProgressBar({ habits }) {
   }, []);
 
   return (
-    <div className="container">
+    <>
+
+      <div className="container">
+
       <div className="progressContainer">
         <div className="progressBar" style={{ width: `${progress}%` }}>
           {`${progress}%`}
         </div>
+        </div>
+        
       </div>
+
       <div className="progressBtn">
         {limitedHabits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
       </div>
       {habits.length > 12 && <p>Solo se mostrarán los 12 primeros hábitos.</p>}
-    </div>
+    </>
   );
 }
 
