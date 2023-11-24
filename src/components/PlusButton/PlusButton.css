@@ -1,11 +1,9 @@
-
-.nextButton {    
+.plusBtnContainer {    
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-   
-    
+    bottom: 30px;
+    right: 30px;  
 }
+
 .nextButton button{ 
     padding: 10px;
     background-color: #007BFF;
@@ -14,3 +12,4 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
