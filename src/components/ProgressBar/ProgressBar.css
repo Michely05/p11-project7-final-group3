@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: center;
   transform: translateY(18em);
-  margin-top: 100%;
-  position: absolute;
 }
 
 .progressContainer {
