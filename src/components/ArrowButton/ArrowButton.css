@@ -1,0 +1,16 @@
+
+.arrowBtnContainer {    
+    position: fixed;
+    bottom: 741px;
+    right: 319px;  
+}
+
+.arrowBtnContainer img{ 
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}

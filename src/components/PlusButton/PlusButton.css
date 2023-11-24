@@ -1,15 +1,16 @@
 .plusBtnContainer {    
     position: fixed;
-    bottom: 30px;
-    right: 30px;  
+    bottom: 20px;
+    right: 20px;  
 }
 
-.nextButton button{ 
+.plusBtnContainer img{ 
     padding: 10px;
-    background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: 70px;
+    width: 70px;
 }
 
