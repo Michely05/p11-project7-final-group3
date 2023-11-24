@@ -44,7 +44,7 @@ function ProgressBar({ habits }) {
       <div className="progressBtn">
         {limitedHabits.map((habit) => (
           <button
-            key={habit.id}
+            class="mainPageHabits" key={habit.id}
             onClick={() => handleButtonClick(habit.id)}
             className={selectedButtons.includes(habit.id) ? "selected" : ""}
           >
