@@ -31,12 +31,30 @@
   overflow-y: scroll;
 }
 .progressBtn button {
-  width: 300px;
-  height: 50px;
-  margin: 10px;
-  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+  height: 40px;
+  background-color: #fafafa;
   border: none;
-  background: #fafafa;
+  border-radius: 1em;
+  margin: 8px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.mainPageHabits {
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  text-align: start;
+  color: #ba0d0d;
+  margin-left: 30px;
+}
+
+.categoryColor {
+  width: 10px;
+  height: 90%;
+  background-color: #ae8bdb;
 }
