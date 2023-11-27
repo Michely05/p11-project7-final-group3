@@ -31,6 +31,7 @@
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    outline: none;
 }
 
 .passwordInput{
@@ -40,6 +41,7 @@
     border-radius: 20px;
     margin: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    outline: none;
 }
 
 .textParraf{
@@ -81,19 +83,24 @@
 }
 
 .letterO{
-    color: #7C7C7C;
+    color: #959595;
 }
 
 hr{
     width: 100px;
     margin: 14px;
-    border: 0.1 solid #7C7C7C;
+    border: 0.1px solid #d2d2d2;
 }
 
 
 .emailInput::placeholder,
 .passwordInput::placeholder {
-    text-align: center;/* Alinea el texto del placeholder al centro */
-    margin-left: 150px; /* Agrega un pequeño margen a la izquierda del placeholder */
+    text-align: start;/* Alinea el texto del placeholder al centro */
+    padding-left: 10px;
     color: #AE8BDB; /* Puedes ajustar el color del placeholder según tus preferencias */
 }
+
+input [type=text]{
+    margin-left: 60px;
+}
+
