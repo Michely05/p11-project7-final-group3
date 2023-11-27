@@ -32,19 +32,10 @@ function ProgressBar({ habits }) {
   }, [selectedButtons, limitedHabits]);
 
   return (
-<<<<<<< HEAD
-    <div className="container">
-      <div className="progressContainer">
+    <div className="progressContainer">
+      <div className="barContainer">
         <div className="progressBar" style={{ width: `${progress}%` }}>
           {`${progress}%`}
-=======
-    <>
-      <div className="container">
-        <div className="progressContainer">
-          <div className="progressBar" style={{ width: `${progress}%` }}>
-            {`${progress}%`}
-          </div>
->>>>>>> c19a2b63a318e919c99211b69f6db17fc76a6fb3
         </div>
       </div>
       <div className="progressBtn">
