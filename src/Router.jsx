@@ -2,7 +2,6 @@ import "react";
 import { HabitsApi } from "./API/HabitsApi";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-
 import MainPage from "./pages/Main/MainPage";
 import SelectionPage from "./pages/Selection/SelectionPage";
 import LoginPage from "./pages/LoginPage/LoginPage";

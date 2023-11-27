@@ -1,0 +1,9 @@
+.noHabitsMessage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 14.5em;
+    height: 22.8em;
+     */
+}

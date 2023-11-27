@@ -32,15 +32,12 @@ function ProgressBar({ habits }) {
   }, [selectedButtons, limitedHabits]);
 
   return (
-    <>
-      <div className="container">
-        <div className="progressContainer">
-          <div className="progressBar" style={{ width: `${progress}%` }}>
-            {`${progress}%`}
-          </div>
+    <div className="progressContainer">
+      <div className="barContainer">
+        <div className="progressBar" style={{ width: `${progress}%` }}>
+          {`${progress}%`}
         </div>
       </div>
-
       <div className="progressBtn">
         {limitedHabits.map((habit) => (
           <div key={habit.id}>
@@ -52,7 +49,6 @@ function ProgressBar({ habits }) {
           </div>
         ))}
       </div>
-    </>
   );
 }
 
