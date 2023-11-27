@@ -78,6 +78,7 @@ export default function LoginForm(){
                  <p className="letterO">O</p>
                  <hr />
                  </div>
+                 
                  <button type="submit" className="enterBtn" onClick={() => navigate('/main')}>Entar</button>
 
 
