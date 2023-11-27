@@ -1,10 +1,12 @@
 import "react";
-import { Routes, Route } from "react-router-dom";
-import MainPage from "../src/pages/Main/MainPage";
-import SelectionPage from "../src/pages/Selection/SelectionPage";
 import { HabitsApi } from "./API/HabitsApi";
 import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+
+import MainPage from "./pages/Main/MainPage";
+import SelectionPage from "./pages/Selection/SelectionPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+
 
 export function Router() {
   const onSelectedHabit = (id) => {
@@ -41,8 +43,9 @@ export function Router() {
 
   return (
     <Routes>
+      <Route path="/" element={<LoginPage />} />
       <Route
-        path="/"
+        path="/main"
         element={<MainPage habits={habits.filter((habit) => habit.selected)} />}
       />
       <Route
@@ -51,7 +54,6 @@ export function Router() {
           <SelectionPage habits={habits} onSelectedHabit={onSelectedHabit} />
         }
       />
-      <Route path="/login" element={<LoginPage />} />
     </Routes>
   );
 }

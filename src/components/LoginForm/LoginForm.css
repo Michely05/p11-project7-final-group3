@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(112, 104, 104);
-    border: 1px solid red;
+    background-color: #AE8BDB;
 }
 
 .welcomeForm{
@@ -13,9 +12,8 @@
     align-items: center;
     flex-direction: column;
     width: 340px;
-    height: 540px;
-    background-color: aliceblue;
-    border: 1px solid green;
+    height: 600px;
+    background-color: white;
     border-radius: 20px;
 }
 
@@ -29,7 +27,7 @@
 .emailInput{
     width: 250px;
     height: 40px;
-    border: 1px solid #AE8BDB;
+    border: 2px solid #AE8BDB;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -38,7 +36,7 @@
 .passwordInput{
     width: 250px;
     height: 40px;
-    border: 1px solid #AE8BDB;
+    border: 2px solid #AE8BDB;
     border-radius: 20px;
     margin: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -55,8 +53,47 @@
     height: 40px;
     border: none;
     border-radius: 20px;
-    margin: 20px;
+    margin: 10px;
     background-color: #AE8BDB;
     color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.linkAccount {
+    color: #AE8BDB;
+}
+
+.enterBtn {
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #AE8BDB;
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letterO{
+    color: #7C7C7C;
+}
+
+hr{
+    width: 100px;
+    margin: 14px;
+    border: 0.1 solid #7C7C7C;
+}
+
+
+.emailInput::placeholder,
+.passwordInput::placeholder {
+    text-align: center;/* Alinea el texto del placeholder al centro */
+    margin-left: 150px; /* Agrega un pequeño margen a la izquierda del placeholder */
+    color: #AE8BDB; /* Puedes ajustar el color del placeholder según tus preferencias */
 }
