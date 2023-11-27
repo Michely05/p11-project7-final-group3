@@ -4,7 +4,7 @@ import arrowbutton from "../../assets/img/backArrow.png";
 function ArrowButton() {
     return (
         <div className="arrowBtnContainer">
-             <Link to={"/"}>
+             <Link to={"/main"}>
              <img src={arrowbutton} alt="Main Icon" className="icon" /></Link>
         </div>
     );

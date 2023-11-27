@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./ProgressBar.css";
 import "../UserOptions/UserOptions";
-import UserOptions from "../UserOptions/UserOptions";
+import Checkbox from "../Checkbox/Checkbox";
 
 function ProgressBar({ habits }) {
   const limitedHabits = habits.slice(0, 12);
   const [progress, setProgress] = useState(0);
   const [selectedButtons, setSelectedButtons] = useState([]);
 
-  const handleButtonClick = (habitId) => {
+  const handleCheckboxClick = (habitId) => {
     // Verifica si el botón ya está seleccionado
-    const isButtonSelected = selectedButtons.includes(habitId);
+    const isCheckboxSelected = selectedButtons.includes(habitId);
 
     // Actualiza el estado de los botones seleccionados
-    if (isButtonSelected) {
+    if (isCheckboxSelected) {
       setSelectedButtons((prevSelected) =>
         prevSelected.filter((selectedId) => selectedId !== habitId)
       );
@@ -27,7 +27,7 @@ function ProgressBar({ habits }) {
     const totalSelected = selectedButtons.length;
     const totalHabits = limitedHabits.length;
 
-    const newProgress = (totalSelected / totalHabits) * 100;
+    const newProgress = totalHabits === 0 ? 0 : Math.floor((totalSelected / totalHabits) * 100);
     setProgress(newProgress);
   }, [selectedButtons, limitedHabits]);
 
@@ -40,17 +40,15 @@ function ProgressBar({ habits }) {
       </div>
       <div className="progressBtn">
         {limitedHabits.map((habit) => (
-          <button
-            class="mainPageHabits" key={habit.id}
-            onClick={() => handleButtonClick(habit.id)}
-            className={selectedButtons.includes(habit.id) ? "selected" : ""}
-          >
-            {habit.name}
-          </button>
+          <div key={habit.id}>
+          <Checkbox
+            onClick={() => handleCheckboxClick(habit.id)}
+            checked={selectedButtons.includes(habit.id) ? "selected" : ""}
+            label={habit.name}
+          />
+          </div>
         ))}
       </div>
-      {habits.length > 12 && <p>Solo se mostrarán los 12 primeros hábitos.</p>}
-    </div>
   );
 }
 
