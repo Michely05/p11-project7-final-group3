@@ -70,7 +70,7 @@ export default function LoginForm(){
                 <input type="password" className="passwordInput" id="password" placeholder="contraseña" />
 
                 <p className="textParraf">¿Has olvidado tu contraseña?  <a className="linkAccount" href="#" >Recordar contraseña</a></p>
-                 <button type="submit" className="loguinBtn" onClick={() => navigate('/main')}>Entar</button>
+                 <button type="submit" className="loguinBtn" onClick={() => navigate('/main')}>Iniciar sesión</button>
                 
                 <div className="separator">
                  <hr />

@@ -48,26 +48,6 @@
       "description": "Realizar estiramientos por 5 minutos al despertar.",
       "category": "Deporte",
       "completed": false
-    },
-    {
-      "name": "tretret",
-      "id": 8
-    },
-    {
-      "name": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "id": 11
-    },
-    {
-      "name": "retretertre",
-      "id": 12
     }
   ]
 }
