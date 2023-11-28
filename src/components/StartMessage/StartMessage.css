@@ -3,7 +3,16 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* width: 14.5em;
-    height: 22.8em;
-     */
+    margin-top: 100px;
+}
+
+.bunnyImg{
+    margin-bottom: 40px;
+    width: 140px;
+}
+
+.bunnyParraf{
+    text-align: center;
+    width: 300px;
+    font-size: 18px;
 }

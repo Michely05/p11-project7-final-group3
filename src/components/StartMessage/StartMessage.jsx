@@ -5,8 +5,8 @@ import BunnyLogo from '../../assets/img/Bunny.png'
 function StartMessage () {
     return (       
         <div className="noHabitsMessage">
-            <img src={BunnyLogo} alt="Imagen de un conejo" />
-            <p>¡Aún no has añadido ningún hábito! Selecciona “+” para añadir uno.</p>
+            <img className='bunnyImg' src={BunnyLogo} alt="Imagen de un conejo" />
+            <p className='bunnyParraf'>¡Aún no has añadido ningún hábito! Selecciona “+” para añadir uno.</p>
         </div> );
 }
  

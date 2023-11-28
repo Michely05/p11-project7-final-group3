@@ -55,7 +55,6 @@ export default function LoginForm(){
         } else{
           setIsLogged(false);
         }
-    
       }
     
 
@@ -71,7 +70,7 @@ export default function LoginForm(){
                 <input type="password" className="passwordInput" id="password" placeholder="contraseña" />
 
                 <p className="textParraf">¿No tienes una cuenta? Puedes crearla <a className="linkAccount" href="#" onClick={() => navigate('/register')}>aqui</a></p>
-                 <button type="submit" className="loguinBtn">Iniciar Sessión</button>
+                 <button type="submit" className="loguinBtn">Entar</button>
                 
                 <div className="separator">
                  <hr />
@@ -79,7 +78,7 @@ export default function LoginForm(){
                  <hr />
                  </div>
                  
-                 <button type="submit" className="enterBtn" onClick={() => navigate('/main')}>Entar</button>
+                 <button type="submit" className="enterBtn" onClick={() => navigate('/main')}>Regis</button>
 
 
             </form>

@@ -1,18 +1,19 @@
 .progressContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(18em);
+  align-items: center; 
 }
+
 .barContainer {
   width: 300px;
   height: 16px;
   border-radius: 16px;
   background-color: #dbedd6;
-  position: absolute;
-  transform: translateY(2em);
+  z-index: 10;
+  position: fixed;
+  margin-top: 300px;
 }
+
 .progressBar {
   border-radius: 16px;
   background-color: #4caf50;
@@ -21,4 +22,8 @@
   font-size: 12px;
   font-weight: 600;
   height: 16px;
+}
+
+.progressBtn{
+  position: fixed;
 }

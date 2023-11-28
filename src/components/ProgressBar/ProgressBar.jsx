@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./ProgressBar.css";
 import "../UserOptions/UserOptions";
 import Checkbox from "../Checkbox/Checkbox";
+import StartMessage from "../StartMessage/StartMessage"; // Asegúrate de ajustar la ruta correcta
 
 function ProgressBar({ habits }) {
   const limitedHabits = habits.slice(0, 12);
@@ -33,23 +34,29 @@ function ProgressBar({ habits }) {
 
   return (
     <div className="progressContainer">
-      <div className="barContainer">
-        <div className="progressBar" style={{ width: `${progress}%` }}>
-          {`${progress}%`}
-        </div>
-      </div>
-      <div className="progressBtn">
-        {limitedHabits.map((habit) => (
-          <div key={habit.id}>
-          <Checkbox
-            onClick={() => handleCheckboxClick(habit.id)}
-            checked={selectedButtons.includes(habit.id) ? "selected" : ""}
-            label={habit.name}
-          />
+      {limitedHabits.length === 0 ? (
+        <StartMessage />
+      ) : (
+        <>
+          <div className="barContainer">
+            <div className="progressBar" style={{ width: `${progress}%` }}>
+              {`${progress}%`}
+            </div>
           </div>
-        ))}
-      </div>
-      </div>
+          <div className="progressBtn">
+            {limitedHabits.map((habit) => (
+              <div key={habit.id}>
+                <Checkbox
+                  onClick={() => handleCheckboxClick(habit.id)}
+                  checked={selectedButtons.includes(habit.id) ? "selected" : ""}
+                  label={habit.name}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 
