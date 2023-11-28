@@ -69,8 +69,8 @@ export default function LoginForm(){
                 <label htmlFor="password"></label>
                 <input type="password" className="passwordInput" id="password" placeholder="contraseña" />
 
-                <p className="textParraf">¿No tienes una cuenta? Puedes crearla <a className="linkAccount" href="#" onClick={() => navigate('/register')}>aqui</a></p>
-                 <button type="submit" className="loguinBtn">Entar</button>
+                <p className="textParraf">¿Has olvidado tu contraseña?  <a className="linkAccount" href="#" >Recordar contraseña</a></p>
+                 <button type="submit" className="loguinBtn" onClick={() => navigate('/main')}>Entar</button>
                 
                 <div className="separator">
                  <hr />
@@ -78,7 +78,7 @@ export default function LoginForm(){
                  <hr />
                  </div>
                  
-                 <button type="submit" className="enterBtn" onClick={() => navigate('/main')}>Regis</button>
+                 <button type="submit" className="enterBtn" onClick={() => navigate('/register')}>Registrarse</button>
 
 
             </form>

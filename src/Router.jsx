@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import MainPage from "./pages/Main/MainPage";
 import SelectionPage from "./pages/Selection/SelectionPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
 
 
 export function Router() {
@@ -53,6 +54,7 @@ export function Router() {
           <SelectionPage habits={habits} onSelectedHabit={onSelectedHabit} />
         }
       />
+      <Route path="/register" element={<RegisterPage />} />
     </Routes>
   );
 }
