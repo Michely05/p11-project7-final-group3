@@ -1,0 +1,18 @@
+.noHabitsMessage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.bunnyImg{
+    margin-bottom: 40px;
+    width: 140px;
+}
+
+.bunnyParraf{
+    text-align: center;
+    width: 300px;
+    font-size: 18px;
+}

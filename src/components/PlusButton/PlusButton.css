@@ -1,10 +1,9 @@
 .plusBtnContainer {    
     position: fixed;
     bottom: 20px;
-    right: 20px;  
+    right: 20px;
 }
-
-.plusBtnContainer img{ 
+.plusBtnContainer img{
     padding: 10px;
     color: #fff;
     border: none;
@@ -12,5 +11,4 @@
     cursor: pointer;
     height: 70px;
     width: 70px;
-}
-
+    }

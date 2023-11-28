@@ -1,45 +1,62 @@
-import "./ProgressBar.css";
 import React, { useState, useEffect } from "react";
+import "./ProgressBar.css";
 import "../UserOptions/UserOptions";
-import UserOptions from "../UserOptions/UserOptions";
+import Checkbox from "../Checkbox/Checkbox";
+import StartMessage from "../StartMessage/StartMessage"; // Asegúrate de ajustar la ruta correcta
 
 function ProgressBar({ habits }) {
-  const limitedHabits = habits.slice(0,12)
+  const limitedHabits = habits.slice(0, 12);
   const [progress, setProgress] = useState(0);
-  const [buttonCount, setButtonCount] = useState(0);
+  const [selectedButtons, setSelectedButtons] = useState([]);
 
-  const incrementProgress = () => {
-    if (progress < 100) {
-      // Incrementa el progreso en función del número total de botones
-      const incrementAmount = 100 / buttonCount;
-      setProgress((prevProgress) => Math.min(prevProgress + incrementAmount, 100));
+  const handleCheckboxClick = (habitId) => {
+    // Verifica si el botón ya está seleccionado
+    const isCheckboxSelected = selectedButtons.includes(habitId);
+
+    // Actualiza el estado de los botones seleccionados
+    if (isCheckboxSelected) {
+      setSelectedButtons((prevSelected) =>
+        prevSelected.filter((selectedId) => selectedId !== habitId)
+      );
+    } else {
+      setSelectedButtons((prevSelected) => [...prevSelected, habitId]);
     }
   };
 
   useEffect(() => {
-    // Cuenta la cantidad de botones al renderizar el componente
-    const buttons = document.querySelectorAll(".progressBtn button");
-    setButtonCount(buttons.length);
-  }, []);
+    // Calcula el progreso en función de los botones seleccionados
+    const totalSelected = selectedButtons.length;
+    const totalHabits = limitedHabits.length;
+
+    const newProgress = totalHabits === 0 ? 0 : Math.floor((totalSelected / totalHabits) * 100);
+    setProgress(newProgress);
+  }, [selectedButtons, limitedHabits]);
 
   return (
-    <>
-
-      <div className="container">
-
-      <div className="progressContainer">
-        <div className="progressBar" style={{ width: `${progress}%` }}>
-          {`${progress}%`}
-        </div>
-        </div>
-        
-      </div>
-
-      <div className="progressBtn">
-        {limitedHabits.map(habit => <button key={habit.id} onClick={incrementProgress}>{habit.name}</button>)}
-      </div>
-      {habits.length > 12 && <p>Solo se mostrarán los 12 primeros hábitos.</p>}
-    </>
+    <div className="progressContainer">
+      {limitedHabits.length === 0 ? (
+        <StartMessage />
+      ) : (
+        <>
+          <div className="barContainer">
+            <div className="progressBar" style={{ width: `${progress}%` }}>
+              {`${progress}%`}
+            </div>
+          </div>
+          <div className="progressBtn">
+            {limitedHabits.map((habit) => (
+              <div key={habit.id}>
+                <Checkbox
+                  onClick={() => handleCheckboxClick(habit.id)}
+                  checked={selectedButtons.includes(habit.id) ? "selected" : ""}
+                  label={habit.name}
+                />
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 
