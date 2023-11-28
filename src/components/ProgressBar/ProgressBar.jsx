@@ -49,6 +49,7 @@ function ProgressBar({ habits }) {
           </div>
         ))}
       </div>
+      </div>
   );
 }
 
