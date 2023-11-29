@@ -19,6 +19,14 @@ export function Router() {
     setHabits(updatedHabits);
   };
 
+  const onAddedHabit = async (name) => {
+    //1 enviar el nuevo habito al servidor 
+    let api = new HabitsApi();
+    let habit = await api.createHabit(name) .then((response) => response.json())
+    //2 actualizar la lista de habitos del nuevo state 
+    setHabits([ ...habits, { ...habit, selected: false }]);
+  }
+
   const [habits, setHabits] = useState([]);
 
   useEffect(() => {
@@ -51,7 +59,7 @@ export function Router() {
       <Route
         path="/selection"
         element={
-          <SelectionPage habits={habits} onSelectedHabit={onSelectedHabit} />
+          <SelectionPage habits={habits} onSelectedHabit={onSelectedHabit} onAddedHabit={onAddedHabit}/>
         }
       />
       <Route path="/register" element={<RegisterPage />} />

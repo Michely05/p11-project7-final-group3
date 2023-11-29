@@ -5,12 +5,12 @@ import './SelectionPage.css';
 import ArrowButton from "../../components/ArrowButton/ArrowButton";
 
 
-export default function SelectionPage({habits, onSelectedHabit}){
+export default function SelectionPage({habits, onSelectedHabit, onAddedHabit}){
     return (
         <div className="selectionPage">
             <Header />
             <UserOptions habits={habits} onSelectedHabit={onSelectedHabit} />
-            <Modal />
+            <Modal onAddedHabit={onAddedHabit}/>
             <ArrowButton/>
         </div>
     )

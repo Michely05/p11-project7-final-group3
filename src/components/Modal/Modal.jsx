@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './Modal.css';
+import React, { useState } from "react";
+import "./Modal.css";
 
-export default function Modal() {
+export default function Modal({onAddedHabit}) {
   const [showModal, setShowModal] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
@@ -11,27 +11,9 @@ export default function Modal() {
 
   const handleDoneButtonClick = () => {
     console.log("Texto introducido:", inputValue);
-
-    fetch("http://localhost:3000/habits", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name: inputValue }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Respuesta del servidor:", data);
-      })
-      .catch((error) => {
-        console.error("Error al realizar la solicitud:", error);
-      })
-      .finally(() => {
-        setShowModal(false);
-        setInputValue("");
-        // Recargar la página para reflejar los cambios en el JSON
-        window.location.reload();
-      });
+    onAddedHabit(inputValue);
+    setShowModal(false);
+    setInputValue("");
   };
 
   return (
