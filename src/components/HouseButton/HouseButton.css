@@ -1,0 +1,14 @@
+.houseContainer {    
+    position: fixed;
+    bottom: 741px;
+    right: 319px;
+}
+.houseIcon {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}

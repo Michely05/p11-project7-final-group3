@@ -6,6 +6,7 @@ import MainPage from "./pages/Main/MainPage";
 import SelectionPage from "./pages/Selection/SelectionPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import UserPage from "./pages/UserPage/UserPage";
 
 
 export function Router() {
@@ -63,6 +64,7 @@ export function Router() {
         }
       />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/userprofile" element={<UserPage />} />
     </Routes>
   );
 }
