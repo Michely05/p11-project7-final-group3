@@ -1,5 +1,5 @@
 import "./LoginForm.css";
-import logo from "../../assets/img/rabbitologo1.png";
+import logo from "../../assets/img/habbitologo.png";
 import {useNavigate} from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -64,13 +64,13 @@ export default function LoginForm(){
                 <img className="rabbitoLogo" src={logo} alt="rabitto logo" />
 
                 <label htmlFor="email"></label>
-                <input type="email" className="emailInput" id="email" placeholder="tu mejor email"/>
+                <input type="email" className="emailInput" id="email" placeholder="correo electrónico"/>
 
                 <label htmlFor="password"></label>
                 <input type="password" className="passwordInput" id="password" placeholder="contraseña" />
 
-                <p className="textParraf">¿Has olvidado tu contraseña?  <a className="linkAccount" href="#" >Recordar contraseña</a></p>
-                 <button type="submit" className="loguinBtn" onClick={() => navigate('/main')}>Iniciar sesión</button>
+                <p className="textParraf">¿Has olvidado tu contraseña? Puedes cambiarla  <a className="linkAccount" href="#" >aquí</a></p>
+                 <button type="submit" className="loginBtn" onClick={() => navigate('/main')}>Iniciar sesión</button>
                 
                 <div className="separator">
                  <hr />
@@ -78,7 +78,7 @@ export default function LoginForm(){
                  <hr />
                  </div>
                  
-                 <button type="submit" className="enterBtn" onClick={() => navigate('/register')}>Registrarse</button>
+                 <button type="submit" className="registerBtn" onClick={() => navigate('/register')}>Registrarse</button>
 
 
             </form>
